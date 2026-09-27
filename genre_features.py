@@ -1,6 +1,6 @@
 """
 Shared audio feature extraction for genre classification.
-Used by both train_genre_classifier.py (training) and Test.py (inference).
+Used by both train_genre_classifier.py (training) and Player.py (inference).
 """
 import numpy as np
 import librosa

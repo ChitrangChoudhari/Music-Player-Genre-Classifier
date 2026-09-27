@@ -7,7 +7,7 @@ Usage:
     2. Point DATASET_DIR at the folder that contains one subfolder per genre,
        e.g. gtzan/genres_original/blues/*.wav, .../rock/*.wav, etc.
     3. Run: python train_genre_classifier.py
-    4. Copy the resulting genre_model.pkl next to Test.py.
+    4. Copy the resulting genre_model.pkl next to Player.py.
 """
 import os
 import numpy as np
@@ -19,7 +19,7 @@ from sklearn.metrics import classification_report
 
 from genre_features import extract_features, GENRES
 
-DATASET_DIR = "gtzan/genres_original"  # <-- change to your dataset path
+DATASET_DIR = "./Data/genres_original"  # <-- change to your dataset path
 
 
 def build_dataset():
